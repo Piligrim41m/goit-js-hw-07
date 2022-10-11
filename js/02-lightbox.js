@@ -25,14 +25,6 @@ console.log(elements)
 galleryRef.append(...elements)
 
 
-galleryRef.addEventListener('click', onClikCard);
-
-function onClikCard(event) {
-    event.preventDefault();
-    if (event.target.nodeName !== "IMG") {
-        return;
-    }
     const lightbox = new SimpleLightbox('.gallery a', {captionsData:"alt", captionDelay:250});
 
-}
 
